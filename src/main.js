@@ -93,9 +93,9 @@ average.addEventListener("click", () => {
     }
   }
   let avg = window.data.average(values);
-  document.getElementById("result").innerHTML = `El promedio es: ${parseFloat(
-    avg
-  ).toFixed(2)}%`;
+  document.getElementById(
+    "result"
+  ).innerHTML = `El promedio del periodo es: ${parseFloat(avg).toFixed(2)}%`;
 });
 
 //Función que pinta los años y datos filtrados en una tabla

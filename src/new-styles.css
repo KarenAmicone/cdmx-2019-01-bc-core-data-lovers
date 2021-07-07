@@ -42,8 +42,12 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background: white;
+  justify-content: flex-start;
+  padding: 0 5%;
+  background: lavender;
+  box-shadow: -10px -10px 10px 0 rgba(255, 255, 255, 0.35),
+    -4px -4px 4px 0 rgba(255, 255, 255, 0.45),
+    10px 10px 10px 0 rgba(0, 0, 0, 0.2), 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -160,8 +164,18 @@ tr {
   justify-items: center;
   height: 35px;
 }
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
 
 #average {
+  width: 100%;
   height: 60px;
   padding: 0 15px;
   display: flex;
@@ -194,5 +208,9 @@ tr {
   .country {
     width: 100px;
     height: 70px;
+  }
+
+  .results {
+    width: 50%;
   }
 }
